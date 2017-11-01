@@ -1,18 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
-// The Header creates links that can be used to navigate
-// between routes.
-const Header = () => (
-  <header>
-    <nav>
-      <ul>
-        <li><Link to='/'>Home</Link></li>
-      <li><Link to='/about'>About</Link></li>
-    <li><Link to='/contact'>Contact</Link></li>
-      </ul>
-    </nav>
-  </header>
-)
+export default class Header extends React.Component {
 
-export default Header
+render() {
+    return (
+      <Navbar>
+       <Navbar.Header>
+         <Navbar.Brand>
+           <a href="/">React-Bootstrap</a>
+         </Navbar.Brand>
+       </Navbar.Header>
+       <Nav>
+         <NavItem eventKey={1} href="/">Home</NavItem>
+       <NavItem eventKey={2} href="/about">About</NavItem>
+     <NavItem eventKey={3} href="/contact">contact</NavItem>
+       </Nav>
+     </Navbar>
+
+  )
+
+}
+
+}
