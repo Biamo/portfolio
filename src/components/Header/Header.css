@@ -1,0 +1,17 @@
+.navbar .container{
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px solid #028ab6;
+  border-radius: 5px;
+}
+.header-logo{
+  height: 60px;
+  margin-top: -11px;
+}
+
+.nav{
+  font-size: 40px;
+}
+.navbar-nav{
+  margin-top: 7px!important;
+}
