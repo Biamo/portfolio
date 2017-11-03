@@ -7,7 +7,8 @@ const Home = () => (
 <div class="fullscreen-bg">
   <div class="video-background">
     <div class="video-foreground">
-      <iframe title="back-video" src="https://www.youtube.com/embed/videoseries?list=PLtQt647Xg_xFC8AfXw2TYdgpILqjOFqHy&autoplay=1&loop=1&controls=0&showinfo=0?ecver=2" frameborder="0" allowfullscreen></iframe>
+       {// <iframe title="back-video" src="https://www.youtube.com/embed/videoseries?list=PLtQt647Xg_xFC8AfXw2TYdgpILqjOFqHy&autoplay=1&loop=1&controls=0&showinfo=0?ecver=2" frameborder="0" allowfullscreen></iframe>
+     }
     </div>
   </div>
   <div id="vidtop-content">

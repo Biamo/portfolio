@@ -1,6 +1,15 @@
-* { box-sizing: border-box; }
+.fullscreen-bg{
+  
+}
+* { 
+  box-sizing: border-box; 
+}
 .video-background {
-  background: #000;
+   background: url("back.png") no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
@@ -23,12 +32,13 @@
 	color: #fff;
 }
 .vid-info {
-  position: absolute;
-  width: 100%;
-  background: rgba(0,0,0,0.3);
-  color: #fff;
-  padding: 1rem;
-  font-family: Avenir, Helvetica, sans-serif;
+  position: relative;
+    margin-top: 205px;
+    width: 25%;
+    left: 38%;
+    color: #305d8a;
+    padding: 1rem;
+    font-family: Avenir, Helvetica, sans-serif;
 }
 .vid-info h1 {
   font-size: 2rem;
