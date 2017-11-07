@@ -1,18 +1,15 @@
 import React from 'react'
-import './Home.css'
+import './Home.scss'
 import Typist from 'react-typist';
-// import Iframe from '../Shared/Iframe/Iframe'
 
 const Home = () => (
-<div class="fullscreen-bg">
-  <div class="video-background">
-    <div class="video-foreground">
-       {// <iframe title="back-video" src="https://www.youtube.com/embed/videoseries?list=PLtQt647Xg_xFC8AfXw2TYdgpILqjOFqHy&autoplay=1&loop=1&controls=0&showinfo=0?ecver=2" frameborder="0" allowfullscreen></iframe>
-     }
+<div className="fullscreen-bg">
+  <div className="video-background">
+    <div className="video-foreground">
     </div>
   </div>
   <div id="vidtop-content">
-    <div class="vid-info">
+    <div className="vid-info">
       <Typist>
         <h1> Hi, My name is <b>Amir</b>. </h1>
         <Typist.Delay ms={500} />

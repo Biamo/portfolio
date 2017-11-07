@@ -1,13 +1,21 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.css';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react';
+import { render } from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
 
-render((
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-), document.getElementById('root'));
-registerServiceWorker();
+import App from './App';
+
+const renderApp = () => {
+  render(
+    <AppContainer>
+      <App />
+    </AppContainer>,
+    document.getElementById('root'),
+  );
+};
+
+// This is needed for Hot Module Replacement
+if (module.hot) {
+  module.hot.accept('./App', () => renderApp());
+}
+
+renderApp();

@@ -1,15 +1,13 @@
-.fullscreen-bg{
-  
-}
+
 * { 
   box-sizing: border-box; 
 }
 .video-background {
-   background: url("back.png") no-repeat center center fixed;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+  background: url("back.png") no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: -99;
@@ -28,8 +26,8 @@
 
 #vidtop-content {
   text-align: center;
-	top: 0;
-	color: #fff;
+  top: 0;
+  color: #fff;
 }
 .vid-info {
   position: relative;

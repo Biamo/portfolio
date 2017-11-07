@@ -1,40 +1,14 @@
-import React from 'react';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
-import logo from './logo.gif';
-import './Header.css'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { slide as Menu } from 'react-burger-menu'
+import './Header.scss'
 
+const Header = () => (
+<Menu>
+  <Link to="/" className="menu-item">Home</Link>
+  <Link to="/About" className="menu-item">About</Link>
+  <Link to="/Contact" className="menu-item">Contact</Link>
+</Menu>
+)
 
-class Header extends React.Component {
-  burgerToggle() {
-    let linksEl = document.querySelector('.narrowLinks');
-    if (linksEl.style.display === 'block') {
-      linksEl.style.display = 'none';
-        } else {
-      linksEl.style.display = 'block';
-    }
-  }
- render() {
-    return (
-        <nav>
-          <div className="navWide">
-            <div className="wideDiv">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <div className="navNarrow">
-            <i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
-            <div className="narrowLinks">
-              <a href="#" onClick={this.burgerToggle}>Link 1</a>
-              <a href="#" onClick={this.burgerToggle}>Link 2</a>
-              <a href="#" onClick={this.burgerToggle}>Link 3</a>
-            </div>
-          </div>
-        </nav>
-    );
-  }
-}
-
-export default Header;
-
+export default Header
