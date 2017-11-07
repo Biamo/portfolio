@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "neutrino start",
-    "build": "neutrino build"
+    "build": "neutrino build",
+    "heroku-postbuild": "neutrino build"
   },
   "devDependencies": {
   },
