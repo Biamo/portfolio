@@ -1,5 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Contact = (props) => <h1>{props.name}</h1>;
-
-export default Contact;
+export default class Contact extends Component {
+	constructor(props) {
+    super(props);
+  }
+	render() {
+		return (
+			<h1>contact</h1>
+		);
+	}
+}
