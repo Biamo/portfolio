@@ -13,9 +13,9 @@ const renderApp = () => {
   );
 };
 
-// // This is needed for Hot Module Replacement
-// if (module.hot) {
-//   module.hot.accept('./App', () => renderApp());
-// }
+// This is needed for Hot Module Replacement
+if (module.hot) {
+  module.hot.accept('./App', () => renderApp());
+}
 
 renderApp();
