@@ -24,6 +24,19 @@ export default class App extends React.Component {
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
+      <footer>
+      <ul className="social">
+        <li className="social__item">
+          <a className="social__link" href="https://github.com/bidva" target="blank_"><span className="hide">Github <span></span></span></a>
+        </li>
+        <li className="social__item">
+          <a className="social__link" href="https://www.linkedin.com/in/amir-bidva-854b7a75/" target="blank_"><span className="hide">LinkedIn <span></span></span></a>
+        </li>
+        <li className="social__item">
+          <a className="social__link" href="https://github.com/Biamo/portfolio" target="blank_"><span className="hide">Source Code <span></span></span></a>
+        </li>
+      </ul>
+    </footer>
     </div>
   </Router>
     );

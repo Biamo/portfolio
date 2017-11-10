@@ -5,3 +5,49 @@ body {
 .app{
 	position: absolute;
 }
+
+footer{
+	float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-size: 1.6em;
+}
+
+footer .social{
+	background-color: #004ead;
+  list-style-type: none;
+  padding: 1em 0;
+}
+
+footer ul{
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+	-moz-margin-before: 0;
+	-moz-margin-after: 0;
+	-moz-margin-start: 0;
+	-moz-margin-end: 0;
+	-moz-padding-start: 0;
+	margin: 0;
+}
+
+footer .social__item{
+	display: inline-block;
+	padding: 0 15px;
+}
+
+footer .social__link{
+	color: #00c3e3;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition-property: all;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.6,.2,.1,1);
+}
