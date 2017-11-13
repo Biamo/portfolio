@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { bubble as Menu } from 'react-burger-menu'
-import './Header.scss'
+import './Header.css'
 
 export default class Header extends React.Component {
 
@@ -11,9 +11,9 @@ export default class Header extends React.Component {
   render() {
     return (
     	<Menu isOpen={ false } >
-  			<Link to="/" className="menu-item" >Home</Link>
-  			<Link to="/About" className="menu-item">About</Link>
-  			<Link to="/Contact" className="menu-item">Contact</Link>
+  			 <NavLink exact activeStyle={{color:'red'}} to="/" className="menu-item" >Home</NavLink>
+  			 <NavLink activeStyle={{color:'red'}} to="/about" className="menu-item">About</NavLink>
+  			 <NavLink activeStyle={{color:'red'}} to="/Contact" className="menu-item">Contact</NavLink>
 			</Menu>
     );
   }

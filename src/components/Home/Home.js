@@ -1,4 +1,4 @@
-import './Home.scss'
+import './Home.css'
 import Typist from 'react-typist';
 
 import React from 'react';
