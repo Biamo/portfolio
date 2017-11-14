@@ -2416,6 +2416,12 @@ body.noscroll {
 .four-oh-four--container p {
     color: #004ead
 }
+.greeting{
+    font-size: 4em;
+}
+.intruduce{
+    font-size: 2em;
+}
 
 @media (min-width:425px) {
     header .share-dropdown-list {

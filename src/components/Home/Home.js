@@ -13,9 +13,9 @@ export default class Home extends React.Component {
     let cursor ={
           show: true,
           blink: true,
-          element: '|',
+          element: '_',
           hideWhenDone: true,
-          hideWhenDoneDelay: 1000,
+          hideWhenDoneDelay: 500,
     }
     return (
             <div className="home-content">
@@ -23,7 +23,7 @@ export default class Home extends React.Component {
       <Typist className="greeting" cursor={cursor}>
         <span>Hi, My name is <b>Amir</b>.</span>
       </Typist>
-      <Typist cursor={cursor}>
+      <Typist className="intruduce" cursor={cursor}>
         <Typist.Delay ms={5000}/>
         <span>I'm a Developer</span>
         <Typist.Backspace count={9} delay={400} />
